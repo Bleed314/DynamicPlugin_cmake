@@ -36,8 +36,4 @@ ADD_SUBDIRECTORY(${PROJECT_SOURCE_DIR}/src/DynamicLoad)     # 会调用该目录
 ADD_SUBDIRECTORY(${PROJECT_SOURCE_DIR}/src/MyPlugin)     # 会调用该目录中的CMakeLists.txt进行编译生成动态库
 ADD_SUBDIRECTORY(${PROJECT_SOURCE_DIR}/src/PluginManagerLib)    # 会调用该目录中的CMakeLists.txt进行编译生成可执行文件
 
-# 在 Visual Studio 中设置调试目标
-set_target_properties(DynamicLoad PROPERTIES
-    VS_DEBUGGER_COMMAND "${CMAKE_BINARY_DIR}/DynamicLoad"
-)
 
